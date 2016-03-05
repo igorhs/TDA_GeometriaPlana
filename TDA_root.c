@@ -4,7 +4,10 @@
 #include <math.h>
 #include "TDA.h"
 
-/*Calculo da distancia entre 2 pontos*/
+//Commentaries were set up both in English and Portuguese.
+
+//Estimating the distance between 2 points.
+//Calculo da distancia entre 2 pontos.
 float CalcDist(ponto p1, ponto p2)
 {
 	float D;
@@ -49,7 +52,8 @@ float EquacaoRetaFinal(Linha Reta)
 	return Comprimento;	
 }
 
-/*Validação de poligono com 4 ou 3 lados*/
+//Verifying if it is a 4 sided polygon or 3 sided polygon.
+//Validação de poligono com 4 ou 3 lados.
 void ValidaPoligono(struct poligono_plano poli)
 {
 	int a, b, c, d;
@@ -99,7 +103,8 @@ void ValidaPoligono(struct poligono_plano poli)
 	}
 }
 
-/*Calculo da Area de um triangulo*/
+//Calculating the triangle's area.
+//Calculo da area de um triangulo.
 float calcAREAtri(struct poligono_plano poli)
 {
 	int a,b,c;
@@ -148,7 +153,8 @@ float calcAREAtri(struct poligono_plano poli)
 	return area;
 }
 
-/*Descobre a altura de triangulos*/
+//Determining the triangle's height.
+//Descobre a altura do triangulo.
 float descobre_altura(int a, int b, int c, int tipo)
 {
 	float altura;
@@ -181,7 +187,9 @@ float descobre_altura(int a, int b, int c, int tipo)
 	
 	return altura;
 }
-/*Calculo da area de um quadrilatero*/
+
+//Calculating the quadrangle area.
+//Calculo da area de um quadrilátero.
 float calcAREAQuad(struct poligono_plano poli, int Opcao)
 {
 	int a, b, c, d;
@@ -203,7 +211,8 @@ float calcAREAQuad(struct poligono_plano poli, int Opcao)
 
 }
 
-/*Verifica se 3 pontos sao colineares*/
+//Verifying if 3 points are collinear.
+//Verifica se 3 pontos sao colineares.
 void VerificaColinear (ponto A, ponto B, ponto C)
 {
 	float Col;
@@ -214,7 +223,9 @@ void VerificaColinear (ponto A, ponto B, ponto C)
 	else 
 		printf("Nao sao colineares\n\n");
 }
-/*Verifica se 2 retas se interceptam*/
+
+//Verifying if 2 lines intersect.
+//Verifica se 2 retas se interceptam
 void Intercep (ponto A, ponto B, ponto C, ponto D)
 {
 	float result, result2;
